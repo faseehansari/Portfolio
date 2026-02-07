@@ -53,7 +53,13 @@ body{
     /* opacity: 0.1; */
     /* border: 1px solid #fff; */
     border-radius: 8px;
-    background-color: grey;
+    background: linear-gradient(
+  to right,
+  rgba(128,128,128,1) 0%,
+  rgba(128,128,128,0.6) 40%,
+  rgba(128,128,128,0) 90%
+);
+    /* background-color: linear-gradient(to right, gray, gray, ); */
 }
 
 /* -------------------------
@@ -161,7 +167,14 @@ Hamburger
     }
     .nav-links :hover{
         border-radius: 8px;
-        background-color: grey;
+        /* background-color: grey; */
+        background: linear-gradient(
+  to right,
+  rgba(128,128,128,1) 0%,
+  rgba(128,128,128,0.6) 30%,
+  rgba(128,128,128,0) 90%
+);
+
     }
     .nav-links.active {
         max-height: 500px; 
