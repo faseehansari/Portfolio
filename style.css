@@ -10,6 +10,10 @@
 body{
     background-color: var(--text-color);
 }
+.h-parent{
+    display: flex;
+    justify-content: center;
+}
 .header {
     /* border: 1px solid red; */
   background-color: var(--primary-color);
@@ -20,8 +24,9 @@ body{
   justify-content: space-between;
   position: sticky;
   top: 0.2em;
-  margin: 0.8em 5em;
+  margin: 0.8em 0em;
   border-radius: 40px;
+  width: 80vw;
 }
 
 .logo {
@@ -131,8 +136,10 @@ Hamburger
  @media (max-width: 768px){
 .header{
         padding: 0.8em 1.2em;
-        margin: 0.5em 0.4em;
-        border-radius: 28px;
+        margin: 0.5em 0em;
+        width: 95vw;
+        /* width: 100vw; */
+        border-radius: 22px;
     }
     .openbtn {
         display: block;
