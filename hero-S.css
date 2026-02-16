@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+body{
+    background-color: rgba(255, 218, 188, 0.959);
+}
+.Hero-parent{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.hero-section{
+    border: 1px solid ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2.5em 0em;
+    width: 90vw;
+
+}
+.hero-section span{
+    color: rgb(245, 153, 14);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+.h-para{
+    font-size: 50px;
+    width: 27vw;
+    line-height: 34px;
+    font-family: "Changa One", sans-serif;
+}
+.h-pic img{
+    width: 35vw;
+}
+.pic{
+    z-index: -100;
+    position: absolute;
+    right: 1%;
+    top: 22.5%;
+}
+.h-pic{
+     animation: popupAnim 1.5s ease forwards;
+     position: relative;
+     left: 3%;
+     bottom: 6%;
+}
+@keyframes popupAnim{
+  0%{
+    opacity:0;
+    transform:scale(0.5);
+  }
+  100%{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+.para2{
+    position: relative;
+    left: 5%;
+    animation: slideIn 1.2s ease forwards;
+}
+@keyframes slideIn{
+  0%{
+    opacity:0;
+    transform:translateX(100%);
+  }
+  100%{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+.para1{
+    animation: slideone 1.2s ease forwards;
+}
+@keyframes slideone{
+  0%{
+    opacity:0;
+    transform:translateX(-100%);
+  }
+  100%{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+/* ========Section 02========= */
+
+.About-S{
+  border: 1px solid red;
+  width: 90vw;
+  margin: 4em auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.A-pic{
+  animation: Sleft 1.2s ease forwards;
+}
+@keyframes Sleft{
+  0%{
+    opacity:0;
+    transform:translateX(-100%);
+  }
+  100%{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+.A-pic img{
+  width: 30vw;
+}
+.A-para{
+  max-width: 50%;
+  flex: 1;
+  padding: 25px 30px;
+  animation: slideOne 1.2s ease forwards;
+}
+@keyframes slideOne{
+  0%{
+    opacity:0;
+    transform:translateX(100%);
+  }
+  100%{
+    opacity:1;
+    transform:translateX(0);
+  }
+}
+.A-para h2{
+    font-family: "Changa One", sans-serif;
+  font-size: 40px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin-bottom: 0.8em;
+}
+.A-para h4{
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  color: rgb(245, 153, 14);
+    font-weight: 900;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+.A-para p{
+  font-family: 'Inter', sans-serif;
+  font-size: 17.5px;
+  line-height: 27px;
+  font-weight: 500;
+}
+.A-para span{
+  font-weight: 600;
+  color: rgb(255, 115, 0);
+}
