@@ -9,11 +9,11 @@ body{
     overflow: hidden;
 }
 .hero-section{
-    border: 1px solid ;
+    /* border: 1px solid ; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 2.5em 0em;
+    margin: 2.5em 0em 0em 0em;
     width: 90vw;
 
 }
@@ -85,14 +85,26 @@ body{
 /* ========Section 02========= */
 
 .About-S{
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  position: relative;
   width: 90vw;
-  margin: 4em auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+   /* box-shadow: 0 20px 60px rgba(245, 72, 19, 0.486),
+    0 0 0 0px rgba(199, 42, 3, 0.534);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s ease;
+    border: none;
+    border-radius: 20px; */
 }
+/* .About-S:hover{
+  box-shadow: 0 20px 60px rgba(255, 71, 15, 0.466);
+  transition:  0.3s ease-in-out;
+  transform: scale(1.03);
+} */
 .A-pic{
   animation: Sleft 1.2s ease forwards;
 }
